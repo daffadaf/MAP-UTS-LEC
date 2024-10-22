@@ -95,5 +95,4 @@ dependencies {
 
     //WebView
     implementation ("androidx.webkit:webkit:1.4.0")
-
 }
