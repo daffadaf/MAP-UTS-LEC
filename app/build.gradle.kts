@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.swapnil.elearningapp"
+    namespace = "com.elearningapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.swapnil.elearningapp"
+        applicationId = "com.elearningapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
