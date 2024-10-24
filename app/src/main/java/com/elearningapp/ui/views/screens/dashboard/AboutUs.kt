@@ -87,7 +87,7 @@ fun AboutUsScreen() {
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.photo),
+                    painter = painterResource(id = R.drawable.kevin),
                     contentDescription = "About Us Image 1",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier
@@ -97,7 +97,7 @@ fun AboutUsScreen() {
                 )
 
                 Image(
-                    painter = painterResource(id = R.drawable.photo),
+                    painter = painterResource(id = R.drawable.genadi),
                     contentDescription = "About Us Image 2",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier
@@ -115,7 +115,7 @@ fun AboutUsScreen() {
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.photo),
+                    painter = painterResource(id = R.drawable.daffa),
                     contentDescription = "About Us Image 3",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier
@@ -125,7 +125,7 @@ fun AboutUsScreen() {
                 )
 
                 Image(
-                    painter = painterResource(id = R.drawable.photo),
+                    painter = painterResource(id = R.drawable.rainhard),
                     contentDescription = "About Us Image 4",
                     contentScale = ContentScale.FillBounds,
                     modifier = Modifier
