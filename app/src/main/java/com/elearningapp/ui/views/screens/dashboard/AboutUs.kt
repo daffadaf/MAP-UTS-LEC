@@ -4,6 +4,8 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -41,45 +43,12 @@ fun AboutUsScreen() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp)
-                .verticalScroll(rememberScrollState())
                 .background(Color.White),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Image
-            Image(
-                painter = painterResource(id = R.drawable.photo),
-                contentDescription = "About Us Image",
-                contentScale = ContentScale.FillBounds,
-                modifier = Modifier
-                    .size(200.dp) // Adjust size as needed
-                    .clip(CircleShape)
-                    .background(Color.Gray)
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-
-            // Introduction Text
+            // Text Judul
             Text(
-                text = "lah",
-                style = TextStyle(fontSize = 20.sp, color = Color.Black,fontWeight = FontWeight.Medium),
-                textAlign = TextAlign.Center
-            )
-            Spacer(modifier = Modifier.height(20.dp))
-
-            // Introduction Text
-            Text(
-                text = stringResource(id = R.string.intro),
-                style = TextStyle(
-                    fontSize = 16.sp,
-                    color = Color.Black,
-                ),
-                textAlign = TextAlign.Center
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            // Disclaimer Heading
-            Text(
-                text = stringResource(id = R.string.disclaimer_heading),
+                text = stringResource(id = R.string.judul),
                 style = TextStyle(
                     fontSize = 25.sp,
                     fontWeight = FontWeight.Bold,
@@ -87,15 +56,86 @@ fun AboutUsScreen() {
                 ),
                 textAlign = TextAlign.Center
             )
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Text place
+            Text(
+                text = stringResource(id = R.string.place),
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                ),
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Text Anggota Tim
+            Text(
+                text = stringResource(id = R.string.anggotaTim),
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    color = Color.Black,
+                ),
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Row for first two images
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.photo),
+                    contentDescription = "About Us Image 1",
+                    contentScale = ContentScale.FillBounds,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .background(Color.Gray)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.photo),
+                    contentDescription = "About Us Image 2",
+                    contentScale = ContentScale.FillBounds,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .background(Color.Gray)
+                )
+            }
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // Disclaimer Text
-            Text(
-                text = stringResource(id = R.string.disclaimer),
-                style = TextStyle(fontSize = 14.sp, color = Color.DarkGray),
-                textAlign = TextAlign.Start
-            )
+            // Row for next two images
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.photo),
+                    contentDescription = "About Us Image 3",
+                    contentScale = ContentScale.FillBounds,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .background(Color.Gray)
+                )
+
+                Image(
+                    painter = painterResource(id = R.drawable.photo),
+                    contentDescription = "About Us Image 4",
+                    contentScale = ContentScale.FillBounds,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .background(Color.Gray)
+                )
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }

@@ -58,7 +58,7 @@ fun Dashboard(navcontroller: NavController) {
                         .padding(top = 5.dp, start = 15.dp, bottom = 5.dp)
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.edtechapp), // Replace with your image
+                        painter = painterResource(id = R.drawable.ruangsiswa), // Replace with your image
                         contentDescription = "Logo Image",
                         contentScale = ContentScale.Crop
                     )
@@ -122,7 +122,7 @@ fun Dashboard(navcontroller: NavController) {
                     selected = selectedTab == 2,
                     onClick = {
                         selectedTab = 2
-                        val link = "https://drive.google.com/drive/folders/1mzT7SXD_EE2y0g-Lcm7KTkMTL9uqxDn6?usp=sharing"
+                        val link = "https://drive.google.com/drive/folders/1wikaNfL8bHVrohvMbGXrsdufkBI1ZjBu?usp=drive_link"
                         navcontroller.navigate(
                             "video_lesson/${
                                 URLEncoder.encode(

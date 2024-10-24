@@ -72,7 +72,7 @@ fun SplashScreen(navController: NavHostController) {
             verticalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.drawable.edtechapp), // Replace with your image
+                painter = painterResource(id = R.drawable.ruangsiswa), // Replace with your image
                 contentDescription = "Splash Image",
                 modifier = Modifier
                     .size(200.dp)

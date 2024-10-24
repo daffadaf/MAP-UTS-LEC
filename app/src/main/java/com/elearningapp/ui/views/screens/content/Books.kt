@@ -27,9 +27,9 @@ fun Books(navController: NavController) {
 
     // Sample drawable resource IDs (replace with your actual drawable resource IDs)
     val imageResourceIds = listOf(
-        R.drawable.physicsbook, // Replace with your drawable resource ID
-        R.drawable.biologybook, // Replace with your drawable resource ID
-        R.drawable.chemistrybook  // Replace with your drawable resource ID
+        R.drawable.bukufisika, // Replace with your drawable resource ID
+        R.drawable.bukubiologi, // Replace with your drawable resource ID
+        R.drawable.bukukimia  // Replace with your drawable resource ID
     )
 
     Column(
@@ -47,7 +47,7 @@ fun Books(navController: NavController) {
                     .clickable {
                         if(index==0)
                         {
-                            val link="https://drive.google.com/file/d/1MQU1oELAOwgk_pUInjl9NJThrhE5t-4R/view?usp=sharing"
+                            val link="https://drive.google.com/file/d/1QTFQhmvYa-niU-zGhS0YiQxiuz5a8zxx/view?usp=drive_link"
                             navController.navigate(
                                 "video_lesson/${
                                     URLEncoder.encode(
@@ -59,7 +59,7 @@ fun Books(navController: NavController) {
                         }
                         else if(index==1)
                         {
-                            val link="https://drive.google.com/file/d/1g0VBOJLl49hV6bwCBnhhTJnaQLZ57VE4/view?usp=sharing"
+                            val link="https://drive.google.com/file/d/1_LuY1hyUGucNXrv4m0pZO7Td7COh81pT/view?usp=drive_link"
                             navController.navigate(
                                 "video_lesson/${
                                     URLEncoder.encode(
@@ -70,7 +70,7 @@ fun Books(navController: NavController) {
                             )
                         }
                         else{
-                            val link="https://drive.google.com/file/d/1RJRmldonmteOlmnG3xmE47oh6yr3cKAj/view?usp=sharing"
+                            val link="https://drive.google.com/file/d/1c5CeXGb_Cj5BJZDHTYfzimnRaurL5N6q/view?usp=drive_link"
                             navController.navigate(
                                 "video_lesson/${
                                     URLEncoder.encode(
