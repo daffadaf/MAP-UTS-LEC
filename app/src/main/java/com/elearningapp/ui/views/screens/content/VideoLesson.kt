@@ -22,7 +22,7 @@ fun VideoLesson(link: String) {
             WebView(context).apply {
                 webViewClient = WebViewClient()
                 webChromeClient = WebChromeClient()
-                settings.javaScriptEnabled = true
+                settings.javaScriptEnabled = false
                 loadUrl(link)
             }
         },
